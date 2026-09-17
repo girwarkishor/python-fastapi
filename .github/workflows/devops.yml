@@ -1,0 +1,23 @@
+name: python application test with github action
+on: [push]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Setup Python 3.14.2
+        uses: action/setup-python@v1
+        with:
+          python-version: 3.14.2
+      - name: Install dependencies
+        run: |
+          make install
+      - name: lint with pylint
+        run: |
+          make lint
+      - name: Test with pytest
+        run: |
+          make test
+      - name: format code
+        run: |
+          make format
