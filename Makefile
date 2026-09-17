@@ -1,5 +1,6 @@
 install:
 	#install dependencies
+	uv sync
 lint:
 	#check linting error
 format:
