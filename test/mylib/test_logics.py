@@ -1,10 +1,5 @@
 from mylib.logics import get_wikipedia_summary
 
-
-def main():
+def test_get_wikipedia_summary():
     summary = get_wikipedia_summary()
-    print(summary)
-
-
-if __name__ == "__main__":
-    main()
+    assert "god" in summary
