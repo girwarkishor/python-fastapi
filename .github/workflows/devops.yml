@@ -23,3 +23,6 @@ jobs:
       - name: format code
         run: |
           make format
+      - name: Build container image
+        run: |
+          make build

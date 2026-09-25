@@ -14,5 +14,6 @@ test:
 	uv run pytest -vv
 build:
 	#build code
+	docker build -t deploy-fastapi .
 deploy:
 	#code deploy

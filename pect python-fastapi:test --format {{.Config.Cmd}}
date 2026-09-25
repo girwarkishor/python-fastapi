@@ -1,0 +1,19 @@
+[1mNAME[0m
+    cli-fire.py
+
+[1mSYNOPSIS[0m
+    cli-fire.py [4mGROUP[0m | [4mCOMMAND[0m
+
+[1mGROUPS[0m
+    [1m[4mGROUP[0m[0m is one of the following:
+
+     wikipedia
+
+[1mCOMMANDS[0m
+    [1m[4mCOMMAND[0m[0m is one of the following:
+
+     get_wikipedia_summary
+       Get the summary of a Wikipedia page for a given query.
+
+     search_wikipedia
+       Search for a Wikipedia page for a given query.
