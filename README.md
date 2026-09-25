@@ -102,6 +102,27 @@ Once the server starts, the API is available at:
 - Application: [http://127.0.0.1:8000](http://127.0.0.1:8000)
 - Interactive API documentation: [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs)
 
+## TextBlob Setup
+
+TextBlob is a Python library for processing text. This project uses it for
+sentiment analysis and noun phrase extraction.
+
+Add TextBlob to the project dependencies:
+
+```bash
+uv add textblob
+```
+
+Download the language corpora required by TextBlob:
+
+```bash
+uv run python -m textblob.download_corpora
+```
+
+If TextBlob raises a `MissingCorpusError`, run the corpus download command
+again in the project environment. The corpora are required for features such
+as sentiment analysis and noun phrase extraction.
+
 ## Workflow
 
 ![Project workflow](https://github.com/user-attachments/assets/771d644a-4b34-4863-99a8-76f4c9ecc07b)
