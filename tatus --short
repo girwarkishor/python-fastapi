@@ -1,0 +1,16 @@
+[1mNAME[0m
+    cli-fire.py - Get the summary of a Wikipedia page for a given query.
+
+[1mSYNOPSIS[0m
+    cli-fire.py <flags>
+
+[1mDESCRIPTION[0m
+    Get the summary of a Wikipedia page for a given query.
+
+[1mFLAGS[0m
+    -n, --name=[4mNAME[0m
+        Type: str
+        Default: 'War Goddess'
+    -l, --length=[4mLENGTH[0m
+        Type: int
+        Default: 1
