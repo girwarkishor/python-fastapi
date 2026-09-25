@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 import fire
-from mylib.logics import get_wikipedia_summary
+from mylib import logics
 
 if __name__ == '__main__':
-    fire.Fire(get_wikipedia_summary)
+    fire.Fire(logics)

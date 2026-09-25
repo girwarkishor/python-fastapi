@@ -39,10 +39,18 @@ Display the available options:
 uv run ./cli-fire.py --help
 ```
 
-Request a summary with a specific sentence length:
+Retrieve a Wikipedia summary by specifying the page name and the number of
+sentences to return:
 
 ```bash
-uv run ./cli-fire.py --name "Python programming" --length 10
+uv run ./cli-fire.py get_wikipedia_summary --name "Python programming" --length 10
+```
+
+Search Wikipedia for pages related to a keyword. The command returns a list of
+matching page titles:
+
+```bash
+uv run ./cli-fire.py search_wikipedia --name "python"
 ```
 
 ## Inspect Installed Packages
