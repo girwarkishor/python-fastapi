@@ -6,12 +6,12 @@ wikipedia.set_user_agent(
 )
 
 
-def get_wikipedia_summary(name: str = "War Goddess", length: int = 1) -> str:
+async def get_wikipedia_summary(name: str = "War Goddess", length: int = 1) -> str:
     """Get the summary of a Wikipedia page for a given query."""
     my_wiki = wikipedia.summary(name, length)
     return my_wiki
 
-def search_wikipedia(name: str):
+async def search_wikipedia(name: str):
     """Search for a Wikipedia page for a given query."""
     search_results = wikipedia.search(name)
     return search_results

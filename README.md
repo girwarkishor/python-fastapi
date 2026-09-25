@@ -89,6 +89,19 @@ You can then call it directly:
 get_wikipedia_summary()
 ```
 
+## Run the API
+
+Start the FastAPI development server with:
+
+```bash
+uv run fastapi dev
+```
+
+Once the server starts, the API is available at:
+
+- Application: [http://127.0.0.1:8000](http://127.0.0.1:8000)
+- Interactive API documentation: [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs)
+
 ## Workflow
 
 ![Project workflow](https://github.com/user-attachments/assets/771d644a-4b34-4863-99a8-76f4c9ecc07b)
